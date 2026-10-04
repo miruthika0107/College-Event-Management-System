@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Events</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        nav {
+            background-color: #172554;
+            color: white;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .page-title h1 {
+            color: #172554;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: #64748b;
+            font-size: 17px;
+        }
+
+        .events-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 20px 50px 60px;
+        }
+
+        .event-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .event-card h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .event-card p {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #2563eb;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .register-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .events-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">College Events</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Upcoming Events</h1>
+
+        <p>
+            Explore the latest events happening in our college.
+        </p>
+    </section>
+
+    <!-- Events -->
+    <section class="events-container">
+
+        <div class="event-card">
+            <h2>💻 Tech Fest 2026</h2>
+
+            <p>
+                A technical festival featuring coding competitions,
+                project exhibitions and technical workshops.
+            </p>
+
+            <p><strong>Date:</strong> 15 October 2026</p>
+            <p><strong>Venue:</strong> Main Auditorium</p>
+
+            <a href="register.html" class="register-btn">
+                Register
+            </a>
+        </div>
+
+
+        <div class="event-card">
+            <h2>🎭 Cultural Fest</h2>
+
+            <p>
+                Celebrate creativity and culture through music,
+                dance, drama and other performances.
+            </p>
+
+            <p><strong>Date:</strong> 22 October 2026</p>
+            <p><strong>Venue:</strong> College Ground</p>
+
+            <a href="register.html" class="register-btn">
+                Register
+            </a>
+        </div>
+
+
+        <div class="event-card">
+            <h2>🏆 Sports Meet</h2>
+
+            <p>
+                Participate in exciting indoor and outdoor sports
+                competitions organized by the college.
+            </p>
+
+            <p><strong>Date:</strong> 30 October 2026</p>
+            <p><strong>Venue:</strong> Sports Ground</p>
+
+            <a href="register.html" class="register-btn">
+                Register
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Event Management System</p>
+    </footer>
+
+</body>
+</html>
